@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Desktop\\JogoDoPardal\\JogoDoPardal.csproj": {}
+    "c:\\Users\\Aluno\\JogoDoPardal\\JogoDoPardal\\JogoDoPardal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Desktop\\JogoDoPardal\\JogoDoPardal.csproj": {
+    "c:\\Users\\Aluno\\JogoDoPardal\\JogoDoPardal\\JogoDoPardal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\JogoDoPardal\\JogoDoPardal.csproj",
+        "projectUniqueName": "c:\\Users\\Aluno\\JogoDoPardal\\JogoDoPardal\\JogoDoPardal.csproj",
         "projectName": "JogoDoPardal",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\JogoDoPardal\\JogoDoPardal.csproj",
+        "projectPath": "c:\\Users\\Aluno\\JogoDoPardal\\JogoDoPardal\\JogoDoPardal.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\JogoDoPardal\\obj\\",
+        "outputPath": "c:\\Users\\Aluno\\JogoDoPardal\\JogoDoPardal\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -77,6 +77,10 @@
               "target": "Package",
               "version": "[8.0.7, )",
               "autoReferenced": true
+            },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [
@@ -120,6 +124,10 @@
               "target": "Package",
               "version": "[8.0.7, )",
               "autoReferenced": true
+            },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [
@@ -163,6 +171,10 @@
               "target": "Package",
               "version": "[8.0.7, )",
               "autoReferenced": true
+            },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [
@@ -201,6 +213,10 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.61, )"
+            },
+            "Plugin.Maui.Audio": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [

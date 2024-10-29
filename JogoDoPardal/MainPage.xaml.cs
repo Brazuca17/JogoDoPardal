@@ -28,8 +28,8 @@ public partial class MainPage : ContentPage
 
 	bool VerificaColisaoCanoCima()
 	{
-		var posHney = (larguraJanela/2) - (ney.WidthRequest/2);
-		var posVney = (alturaJanela/2) - (ney.HeightRequest/2);
+		var posHney = (larguraJanela/2 -50) - (ney.WidthRequest/2);
+		var posVney = (alturaJanela/2) - (ney.HeightRequest/2) + ney.TranslationY;
 		if (posHney >= Math.Abs(canocima.TranslationX) - canocima.WidthRequest &&
 			posHney <= Math.Abs(canocima.TranslationX) + canocima.WidthRequest &&
 			posVney <= canocima.HeightRequest + canocima.TranslationY)
@@ -44,22 +44,21 @@ public partial class MainPage : ContentPage
 
 	bool VerificaColisaoCanoBaixo()
 	{
-		var posHpardal = (larguraJanela/2) - (ney.WidthRequest/2);
-		var posVpardal = (alturaJanela/2) + (ney.HeightRequest/2) + ney.TranslationY;
-		var yMaxCano = ney.HeightRequest + canocima.TranslationY + aberturMinima;
-		if (posHpardal >= Math.Abs(canobaixo.TranslationX) - canobaixo.WidthRequest &&
-			posHpardal <= Math.Abs(canobaixo.AnchorX) + canobaixo.WidthRequest &&
-			posVpardal >= yMaxCano)
-			{
-				return true;	
-			}
-			else
-			{
-				return false;
-			}
+		var posHney = (larguraJanela - 50) - (ney.WidthRequest/2);
+		var posVney = (alturaJanela / 2) + (ney.HeightRequest/2) + ney.TranslationY;
+		var yMaxCano = canocima.HeightRequest + canocima.TranslationY + aberturMinima;
+		if (posHney >= Math.Abs(canobaixo.TranslationX) - canobaixo.WidthRequest &&
+			posHney <=Math.Abs(canobaixo.TranslationX) + canobaixo.WidthRequest &&
+			posVney >= yMaxCano)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}	
+
 	}
-
-
 	bool VerificaColisaoTeto()
 	{
 		var minY = - alturaJanela/2;
@@ -128,6 +127,7 @@ public partial class MainPage : ContentPage
 			if (VericaColisao())
 			{ 
 				estaMorto = true;
+				SoundHelper.Play("morte.wav");
 				gameover.IsVisible=true;
 				break;
 			}
@@ -153,12 +153,12 @@ public partial class MainPage : ContentPage
 			canocima.TranslationY = Random.Shared.Next((int)alturaMin, (int)alturaMax);
 			canobaixo.TranslationY = canocima.TranslationY + aberturMinima + canobaixo.HeightRequest;
 			score++;
-			if(score % 2 == 0)
-			{
-				gravidadecano++;
-			}
 			labelscore.Text="Canos:" + score.ToString("D3");
 			labelfrase.Text ="VOCÊ PASSOU POR:" + score.ToString("D3") + "CANOS";  
+			if(score % 2 == 0)
+				gravidadecano++;
+				SoundHelper.Play("pontuacao.wav");
+			
 		}
 		
 	}
@@ -183,7 +183,7 @@ public partial class MainPage : ContentPage
 		ney.TranslationX = 0;
 		ney.TranslationY = 0;
 		score = 0;
+		gravidadecano = 15;
 		CanoFrente();
 	}
-
 }

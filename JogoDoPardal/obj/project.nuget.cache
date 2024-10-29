@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "au/nlH/TlLM=",
+  "dgSpecHash": "FL82M4fbC6M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aluno\\Desktop\\JogoDoPardal\\JogoDoPardal.csproj",
+  "projectFilePath": "c:\\Users\\Aluno\\JogoDoPardal\\JogoDoPardal\\JogoDoPardal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -28,6 +28,7 @@
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.7\\microsoft.net.illink.tasks.8.0.7.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240311000\\microsoft.windowsappsdk.1.5.240311000.nupkg.sha512",
+    "C:\\Users\\Aluno\\.nuget\\packages\\plugin.maui.audio\\3.0.1\\plugin.maui.audio.3.0.1.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.android.glide\\4.15.1.2\\xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.android.glide.annotations\\4.15.1.2\\xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.15.1.2\\xamarin.android.glide.disklrucache.4.15.1.2.nupkg.sha512",
