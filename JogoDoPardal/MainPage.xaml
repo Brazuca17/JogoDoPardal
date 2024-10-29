@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JogoDoPardal.MainPage"
+             Shell.NavBarIsVisible="False">
+<Grid>
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="NeySobe" />
+        </Grid.GestureRecognizers>
+        
+
+        <Image  Source="fundoimagem.png"
+                Aspect="AspectFill"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"/>
+
+        <Image  Source="ney.png"
+                x:Name="ney" 
+                BackgroundColor="#FF00FF22"
+                HeightRequest="70"
+                WidthRequest="70"
+                HorizontalOptions="Center"/>
+        
+        <Image  Source="canocima.png"
+                x:Name="canocima"
+                BackgroundColor="#FF00FF22"
+                HeightRequest="620"
+                WidthRequest="20"
+                Aspect="AspectFill"
+                VerticalOptions="Start"
+                HorizontalOptions="End"/> 
+        
+        <Image  Source="canobaixo.png"
+                x:Name="canobaixo"
+                BackgroundColor="#FF00FF22"
+                HeightRequest="620"
+                WidthRequest="20"
+                Aspect="AspectFill"
+                VerticalOptions="End"
+                HorizontalOptions="End"/>
+
+        <Label  x:Name="labelscore"
+                Margin="5,5"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                HorizontalTextAlignment="Center"
+                FontSize="25"
+                TextColor="Black"/>
+
+        <Frame  x:Name="gameover"
+                IsVisible="True"
+                Background="#77FFFFFF"
+                BorderColor="Black">
+        <Grid>
+         <Grid.RowDefinitions>
+           <RowDefinition Height="*"/>
+           <RowDefinition Height="*"/>
+         </Grid.RowDefinitions>
+
+        <Label  Text="Game Over"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="End"
+                Grid.Row="0"
+                FontSize="90"/>
+
+        <Label  x:Name="labelfrase"
+                VerticalOptions="Fill"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Start"
+                Grid.Row="1"
+                FontSize="20"/>
+
+
+        <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="GameOver"/>
+        </Grid.GestureRecognizers>
+        </Grid>
+        </Frame>
+        
+
+
+
+
+</Grid>
+
+</ContentPage>
